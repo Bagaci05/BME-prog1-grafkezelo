@@ -1,0 +1,15 @@
+CSV-formátum szigorú ellenőrzése.
+
+Pontosan három mező ellenőrzése (src;dest;weight).
+
+Üres mezők felismerése.
+
+Nem numerikus értékek felismerése.
+
+Túl hosszú sorok kezelése.
+
+Üres fájl kezelésének meghatározása.
+
+NaN és végtelen súlyok elutasítása.
+
+Beolvasás tesztelése különböző fájlokkal.
