@@ -5,6 +5,10 @@
 #include "debugmalloc.h"
 
 Graf *grafBeolvas(const char *fajlnev){
+    if(fajlnev == NULL){
+        return NULL;
+    }
+
     FILE * fptr = fopen(fajlnev,"r");
     if(fptr == NULL){
         return NULL;

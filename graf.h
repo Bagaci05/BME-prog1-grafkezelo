@@ -24,5 +24,6 @@ void freeGraf(Graf *graf);
 Csucs *csucsFind(Graf const *graf, int keresettid); 
 int csucsHozzad(Graf *graf, int id);
 int elHozzaad(Graf *graf, int forras, int cel, double suly);
+El *elFind(Graf const *graf, int src, int dest);
 void printGraf(const Graf *graf);
 #endif

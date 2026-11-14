@@ -28,6 +28,22 @@ Csucs *csucsFind(Graf const *graf, int keresettid){
     return NULL;
 }
 
+El *elFind(Graf const *graf, int src, int dest){
+    Csucs *aktualis = graf->csucsok;
+    while(aktualis != NULL){
+        El *vizsEl = aktualis->szomszedok;
+        while(vizsEl != NULL){
+            if(aktualis->id == src && vizsEl->cel == dest){
+                return vizsEl;
+            }
+            vizsEl = vizsEl->kov;
+        }
+        aktualis = aktualis->kov;
+    }
+    return NULL;
+
+}
+
 int csucsHozzad(Graf *graf, int newId){
     if (graf == NULL)
         return 2;
